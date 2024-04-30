@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --MainSize: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: var(--MainSize);
+  font-family: "Monserrat";
+}
+body {
+  margin: 0;
+  padding: 1.78rem 1.071rem;
+  background-color: var(--Cream);
+}
+main {
+}
+.card {
+  background-color: var(--White);
+}
+.card:hover figure img {
+  transform: scale(1.2);
+}
+figure {
+  max-width: 49rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+figure img {
+  height: auto;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.card-content {
+  padding: 1.78rem;
+}
+.card-label,
+.card-product-description,
+.original-price {
+  color: var(--Dark-grayish-blue);
+}
+.card-label {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+h1,
+.offer-price {
+  font-family: "Fraunces";
+  font-size: 2.3rem;
+}
+h1 {
+  margin: 1rem 0;
+}
+.card-product-description {
+  line-height: 1.7rem;
+}
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.offer-price {
+  color: var(--Dark-cyan);
+  font-weight: 800;
+}
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+.card-button {
+  background-color: var(--Dark-cyan);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.card-button:hover,
+.card-button:focus {
+  background-color: var(--Dark-grayish-blue);
+}
+.card-button img {
+}
+
+.card-button span {
+  color: var(--Cream);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
